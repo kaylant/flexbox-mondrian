@@ -6,74 +6,93 @@ body {
   margin: 0; }
   body #wrapper {
     width: 100%;
-    height: 100vh; }
-    body #wrapper #square {
-      display: flex; }
-    body #wrapper #pinky {
+    display: flex;
+    flex-direction: row; }
+    body #wrapper #colI, body #wrapper #colII, body #wrapper #colIII {
+      display: flex;
       flex: 2;
-      background: pink;
-      height: 50vh; }
-    body #wrapper #col1 {
-      display: flex;
-      flex: 1;
-      height: 50vh;
+      height: 100vh;
+      border: 1px solid black;
       flex-direction: column; }
-      body #wrapper #col1 #purpley {
-        flex: 1;
-        background: purple; }
-      body #wrapper #col1 #orangey {
-        flex: 2;
-        background: orange;
-        height: 20vh; }
-      body #wrapper #col1 #nested3 {
-        display: flex;
-        flex: 2;
-        height: 50vh; }
-        body #wrapper #col1 #nested3 #reds {
-          flex: 1;
-          background: red; }
-        body #wrapper #col1 #nested3 #teals {
-          flex: 1;
-          background: teal; }
-      body #wrapper #col1 #nested4 {
-        display: flex;
-        flex: 2;
-        height: 10vh; }
-        body #wrapper #col1 #nested4 #conrsilks {
-          flex: 1;
-          background: cornsilk; }
-        body #wrapper #col1 #nested4 #crimsons {
-          flex: 1;
-          background: crimson; }
-    body #wrapper #col2 {
-      display: flex;
+    body #wrapper #colII #square3, body #wrapper #colII #square4 {
       flex: 1;
-      height: 50vh;
-      flex-direction: column; }
-      body #wrapper #col2 #yeller {
-        flex: 2;
-        background: yellow; }
-      body #wrapper #col2 #grays {
-        flex: 2;
-        background: gray; }
-      body #wrapper #col2 #seagreens {
-        flex: 1;
-        background: seagreen; }
-    body #wrapper #creamy {
-      flex: 2;
-      background: beige;
-      height: 50vh; }
-    body #wrapper #nested1 {
+      border: 1px solid black;
       display: flex;
-      height: 50vh;
-      flex: 2; }
-      body #wrapper #nested1 #blues {
+      flex-direction: row; }
+      body #wrapper #colII #square3 #colA, body #wrapper #colII #square4 #colA, body #wrapper #colII #square3 #colB, body #wrapper #colII #square4 #colB {
+        flex: 1;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column; }
+        body #wrapper #colII #square3 #colA #row-a, body #wrapper #colII #square4 #colA #row-a, body #wrapper #colII #square3 #colB #row-a, body #wrapper #colII #square4 #colB #row-a {
+          flex: 1;
+          border: 1px solid black; }
+        body #wrapper #colII #square3 #colA #row-b, body #wrapper #colII #square4 #colA #row-b, body #wrapper #colII #square3 #colB #row-b, body #wrapper #colII #square4 #colB #row-b {
+          flex: 2;
+          border: 1px solid black; }
+        body #wrapper #colII #square3 #colA #row-c, body #wrapper #colII #square4 #colA #row-c, body #wrapper #colII #square3 #colB #row-c, body #wrapper #colII #square4 #colB #row-c {
+          flex: 2;
+          border: 1px solid black;
+          display: flex;
+          flex-direction: row; }
+          body #wrapper #colII #square3 #colA #row-c #col-i, body #wrapper #colII #square4 #colA #row-c #col-i, body #wrapper #colII #square3 #colB #row-c #col-i, body #wrapper #colII #square4 #colB #row-c #col-i {
+            flex: 1;
+            border: 1px solid black; }
+          body #wrapper #colII #square3 #colA #row-c #col-ii, body #wrapper #colII #square4 #colA #row-c #col-ii, body #wrapper #colII #square3 #colB #row-c #col-ii, body #wrapper #colII #square4 #colB #row-c #col-ii {
+            flex: 1;
+            border: 1px solid black; }
+      body #wrapper #colII #square3 #colB #row-d, body #wrapper #colII #square4 #colB #row-d {
         flex: 2;
-        background: blue;
-        height: 10vh; }
-      body #wrapper #nested1 #greeny {
-        flex: 3;
-        background: green;
-        height: 10vh; }
+        border: 1px solid black; }
+      body #wrapper #colII #square3 #colB #row-e, body #wrapper #colII #square4 #colB #row-e {
+        flex: 2;
+        border: 1px solid black; }
+      body #wrapper #colII #square3 #colB #row-f, body #wrapper #colII #square4 #colB #row-f {
+        flex: 1;
+        border: 1px solid black; }
+    body #wrapper #colII #square4 #colC {
+      flex: 1;
+      border: 1px solid black;
+      display: flex;
+      flex-direction: column; }
+      body #wrapper #colII #square4 #colC #row-g {
+        flex: 1;
+        border: 1px solid black; }
+      body #wrapper #colII #square4 #colC #row-h {
+        flex: 2;
+        border: 1px solid black; }
+      body #wrapper #colII #square4 #colC #row-i {
+        flex: 2;
+        border: 1px solid black; }
+    body #wrapper #colII #square4 #colD {
+      flex: 1;
+      border: 1px solid black;
+      display: flex;
+      flex-direction: column; }
+      body #wrapper #colII #square4 #colD #row-j {
+        flex: 2;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: row; }
+        body #wrapper #colII #square4 #colD #row-j #col-iii {
+          flex: 1;
+          border: 1px solid black; }
+        body #wrapper #colII #square4 #colD #row-j #col-iiii {
+          flex: 1;
+          border: 1px solid black; }
+      body #wrapper #colII #square4 #colD #row-k {
+        flex: 2;
+        border: 1px solid black; }
+      body #wrapper #colII #square4 #colD #row-l {
+        flex: 1;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: row; }
+        body #wrapper #colII #square4 #colD #row-l #col-iv {
+          flex: 1;
+          border: 1px solid black; }
+        body #wrapper #colII #square4 #colD #row-l #col-v {
+          flex: 1;
+          border: 1px solid black; }
 
 /*# sourceMappingURL=style.css.map */

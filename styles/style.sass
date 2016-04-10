@@ -15,96 +15,133 @@ body
 
 	#wrapper
 		width: 100%
-		height: 100vh
+		display: flex
+		flex-direction: row
 
-		#square
+		// col I
+		#colI
 			display: flex
-
-		#pinky
 			flex: 2
-			background: pink
-			height: 50vh
-
-		#col1
-			display: flex
-			flex: 1
-			height: 50vh
+			height: 100vh
+			border: 1px solid black
 			flex-direction: column
 
-			#purpley
+		// col II
+		#colII
+			@extend #colI
+
+			#square3 
 				flex: 1
-				background: purple
-
-			#orangey
-				flex: 2
-				background: orange
-				height: 20vh
-
-			#nested3
+				border: 1px solid black
 				display: flex
-				flex: 2
-				height: 50vh
+				flex-direction: row
 
-				#reds
+				#colA
 					flex: 1
-					background: red
+					border: 1px solid black
+					display: flex
+					flex-direction: column
 
-				#teals
+					#row-a
+						flex: 1
+						border: 1px solid black
+
+					#row-b
+						flex: 2
+						border: 1px solid black
+
+					#row-c
+						flex: 2
+						border: 1px solid black
+						display: flex
+						flex-direction: row
+
+						#col-i
+							flex: 1
+							border: 1px solid black
+
+						#col-ii
+							flex: 1
+							border: 1px solid black
+
+				#colB
+					@extend #colA
+
+					#row-d
+						flex: 2
+						border: 1px solid black
+
+					#row-e
+						flex: 2
+						border: 1px solid black	
+
+					#row-f
+						flex: 1
+						border: 1px solid black	
+
+
+			#square4 
+				@extend #square3
+
+				#colC 
 					flex: 1
-					background: teal
+					border: 1px solid black
+					display: flex
+					flex-direction: column
 
-			#nested4
-				display: flex
-				flex: 2
-				height: 10vh
+					#row-g
+						flex: 1
+						border: 1px solid black
 
-				#conrsilks
+					#row-h
+						flex: 2
+						border: 1px solid black	
+
+					#row-i
+						flex: 2
+						border: 1px solid black						
+
+				#colD 
 					flex: 1
-					background: cornsilk
+					border: 1px solid black
+					display: flex
+					flex-direction: column
 
-				#crimsons
-					flex: 1
-					background: crimson
+					#row-j
+						flex: 2
+						border: 1px solid black
+						display: flex
+						flex-direction: row
 
-		#col2
-			display: flex
-			flex: 1
-			height: 50vh
-			flex-direction: column
+						#col-iii
+							flex: 1
+							border: 1px solid black
 
-			#yeller
-				flex: 2
-				background: yellow
+						#col-iiii
+							flex: 1
+							border: 1px solid black
 
-			#grays
-				flex: 2
-				background: gray
+					#row-k
+						flex: 2
+						border: 1px solid black
 
-			#seagreens
-				flex: 1
-				background: seagreen
+					#row-l
+						flex: 1
+						border: 1px solid black
+						display: flex
+						flex-direction: row
 
-		#creamy
-			flex: 2
-			background: beige
-			height: 50vh
+						#col-iv
+							flex: 1
+							border: 1px solid black
 
-		#nested1
-			display: flex
-			height: 50vh
-			flex: 2
+						#col-v
+							flex: 1
+							border: 1px solid black
 
-			#blues
-				flex: 2
-				background: blue
-				height: 10vh
+		// col III
+		#colIII
+			@extend #colI
 
-			#greeny
-				flex: 3
-				background: green
-				height: 10vh
 
-			// #aquamarines
-			// 	flex: 1
-			// 	background: aquamarine
-			// 	height: 20vh
+
