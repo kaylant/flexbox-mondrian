@@ -23,8 +23,141 @@ body
 			display: flex
 			flex: 2
 			height: 100vh
-			border: 1px solid black
 			flex-direction: column
+
+			#square1
+				flex: 1
+				display: flex
+				flex-direction: column
+
+				#rowAA
+					flex: 1
+					display: flex
+					flex-direction: row
+
+					#colAA
+						flex: 2
+						border: 2px solid $coal-color
+						background-color: $white-color
+
+					#colBB
+						flex: 3
+						border: 2px solid $coal-color
+						background-color: $white-color
+
+				#rowBB
+					flex: 4
+					display: flex
+					flex-direction: row
+
+					#colCC
+						flex: 1
+						display: flex
+						flex-direction: column
+
+						#row-aa
+							flex: 1
+							border: 2px solid $coal-color
+							background-color: $white-color
+
+						#row-bb
+							flex: 1
+							border-top: 2px solid $coal-color
+							border-right: 2px solid $coal-color
+							border-left: 2px solid $coal-color
+							background-color: $white-color
+
+					#colDD
+						flex: 4
+						border: 2px solid $coal-color
+						background-color: $red-color
+
+			#square2
+				flex: 1
+				display: flex
+				flex-direction: row
+
+				#rowCC
+					flex: 3
+					display: flex
+					flex-direction: column
+
+					#colEE
+						flex: 4
+						display: flex
+						flex-direction: row
+
+						#row-cc
+							flex: 1
+							display: flex
+							flex-direction: column
+
+							#col-aa
+								flex: 1
+								border-bottom: 2px solid $coal-color
+								border-right: 2px solid $coal-color
+								border-left: 2px solid $coal-color
+								background-color: $white-color
+
+							#col-bb
+								flex: 3
+								border: 2px solid $coal-color
+								background-color: $yellow-color
+
+						#row-dd
+							flex: 2
+							display: flex
+							flex-direction: column
+
+							#col-cc
+								flex: 1
+								border: 2px solid $coal-color
+								background-color: $black-color
+
+							#col-dd
+								flex: 1
+								border: 2px solid $coal-color
+								background-color: $white-color
+
+					#colFF
+						flex: 1
+						border: 2px solid $coal-color
+						background-color: $white-color
+
+				#rowDD
+					flex: 2
+					display: flex
+					flex-direction: column
+
+					#colGG
+						flex: 1
+						border: 2px solid $coal-color
+						background-color: $white-color
+
+					#colHH
+						flex: 1
+						border: 2px solid $coal-color
+						background-color: $white-color
+
+					#colII
+						flex: 1
+						border: 2px solid $coal-color
+						background-color: $black-color
+
+					#colJJ
+						flex: 2
+						display: flex
+						flex-direction: row
+
+						#row-ee
+							flex: 1
+							border: 2px solid $coal-color
+							background-color: $yellow-color
+
+						#row-ff
+							flex: 1
+							border: 2px solid $coal-color
+							background-color: $white-color			
 
 		// col II
 		#colII
@@ -32,116 +165,259 @@ body
 
 			#square3 
 				flex: 1
-				border: 1px solid black
 				display: flex
 				flex-direction: row
 
 				#colA
 					flex: 1
-					border: 1px solid black
 					display: flex
 					flex-direction: column
 
 					#row-a
 						flex: 1
-						border: 1px solid black
+						border: 2px solid $coal-color
+						background-color: $yellow-color
 
 					#row-b
 						flex: 2
-						border: 1px solid black
+						border: 2px solid $coal-color
+						background-color: $yellow-color
 
 					#row-c
 						flex: 2
-						border: 1px solid black
 						display: flex
 						flex-direction: row
 
-						#col-i
+						#col-vi
 							flex: 1
-							border: 1px solid black
+							border: 2px solid $coal-color
+							background-color: $white-color
 
 						#col-ii
 							flex: 1
-							border: 1px solid black
+							border: 2px solid $coal-color
+							background-color: $white-color
 
 				#colB
 					@extend #colA
 
 					#row-d
 						flex: 2
-						border: 1px solid black
+						border: 2px solid $coal-color
+						background-color: $blue-color
 
 					#row-e
 						flex: 2
-						border: 1px solid black	
+						border: 2px solid $coal-color
+						background-color: $red-color	
 
 					#row-f
 						flex: 1
-						border: 1px solid black	
-
+						border: 2px solid $coal-color
+						background-color: $white-color	
 
 			#square4 
 				@extend #square3
 
 				#colC 
 					flex: 1
-					border: 1px solid black
 					display: flex
 					flex-direction: column
 
 					#row-g
 						flex: 1
-						border: 1px solid black
+						border: 2px solid $coal-color
+						background-color: $white-color
 
 					#row-h
 						flex: 2
-						border: 1px solid black	
+						border: 2px solid $coal-color
+						background-color: $blue-color	
 
 					#row-i
 						flex: 2
-						border: 1px solid black						
+						border: 2px solid $coal-color
+						background-color: $red-color						
 
 				#colD 
 					flex: 1
-					border: 1px solid black
 					display: flex
 					flex-direction: column
 
 					#row-j
 						flex: 2
-						border: 1px solid black
 						display: flex
 						flex-direction: row
 
 						#col-iii
 							flex: 1
-							border: 1px solid black
+							border: 2px solid $coal-color
+							background-color: $white-color
 
 						#col-iiii
 							flex: 1
-							border: 1px solid black
+							border: 2px solid $coal-color
+							background-color: $white-color
 
 					#row-k
 						flex: 2
-						border: 1px solid black
+						border: 2px solid $coal-color
+						background-color: $yellow-color
 
 					#row-l
 						flex: 1
-						border: 1px solid black
 						display: flex
 						flex-direction: row
 
 						#col-iv
 							flex: 1
-							border: 1px solid black
+							border: 2px solid $coal-color
+							background-color: $white-color
 
 						#col-v
 							flex: 1
-							border: 1px solid black
+							border: 2px solid $coal-color
+							background-color: $black-color
 
 		// col III
 		#colIII
 			@extend #colI
+
+			#square5
+				flex: 1
+				display: flex
+				flex-direction: column
+
+				#colE
+					flex: 1
+					display: flex
+					flex-direction: row
+
+					#row-m
+						flex: 1
+						border: 2px solid $coal-color
+						background-color: $yellow-color
+
+					#row-n
+						flex: 1
+						border: 2px solid $coal-color
+						background-color: $black-color
+
+					#row-o
+						flex: 3
+						border: 2px solid $coal-color
+						background-color: $white-color
+
+				#colF
+					flex: 4
+					display: flex
+					flex-direction: row
+
+					#row-p
+						flex: 2
+						display: flex
+						flex-direction: column
+
+						#col-a
+							flex: 1
+							border: 2px solid $coal-color
+							background-color: $yellow-color
+
+						#col-b
+							flex: 1
+							border: 2px solid $coal-color
+							background-color: $black-color
+
+						#col-c
+							flex: 1
+							border: 2px solid $coal-color
+							background-color: $white-color
+
+						#col-d
+							flex: 1
+							border: 2px solid $coal-color
+							background-color: $white-color
+
+					#row-q
+						flex: 2
+						display: flex
+						flex-direction: column
+
+						#col-e
+							flex: 1
+							border: 2px solid $coal-color
+							background-color: $white-color
+
+						#col-f
+							flex: 1
+							border: 2px solid $coal-color
+							background-color: $black-color
+
+					#row-r
+						flex: 1
+						display: flex
+						flex-direction: column
+
+						#col-g
+							flex: 3
+							border: 2px solid $coal-color
+							background-color: $yellow-color
+
+						#col-h
+							flex: 1
+							border-top: 2px solid $coal-color
+							border-right: 2px solid $coal-color
+							border-left: 2px solid $coal-color
+							background-color: $white-color
+
+			#square6
+				flex: 1
+				display: flex
+				flex-direction: column
+
+				#colG
+					flex: 4
+					display: flex
+					flex-direction: row
+
+					#row-s
+						flex: 4
+						border: 2px solid $coal-color
+						background-color: $blue-color
+
+					#row-t
+						flex: 1
+						display: flex
+						flex-direction: column
+
+						#col-i
+							flex: 1
+							border-bottom: 2px solid $coal-color
+							border-right: 2px solid $coal-color
+							border-left: 2px solid $coal-color
+							background-color: $white-color
+
+						#col-J
+							flex: 1
+							border: 2px solid $coal-color
+							background-color: $white-color
+
+				#colH
+					flex: 1
+					display: flex
+					flex-direction: row
+
+					#row-u
+						flex: 3
+						border: 2px solid $coal-color
+						background-color: $white-color
+
+					#row-v
+						flex: 2
+						border: 2px solid $coal-color
+						background-color: $white-color
+
+
 
 
 

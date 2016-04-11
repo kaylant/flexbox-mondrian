@@ -12,87 +12,310 @@ body {
       display: flex;
       flex: 2;
       height: 100vh;
-      border: 1px solid black;
       flex-direction: column; }
+      body #wrapper #colI #square1, body #wrapper #colII #square1, body #wrapper #colIII #square1 {
+        flex: 1;
+        display: flex;
+        flex-direction: column; }
+        body #wrapper #colI #square1 #rowAA, body #wrapper #colII #square1 #rowAA, body #wrapper #colIII #square1 #rowAA {
+          flex: 1;
+          display: flex;
+          flex-direction: row; }
+          body #wrapper #colI #square1 #rowAA #colAA, body #wrapper #colII #square1 #rowAA #colAA, body #wrapper #colIII #square1 #rowAA #colAA {
+            flex: 2;
+            border: 2px solid #333;
+            background-color: snow; }
+          body #wrapper #colI #square1 #rowAA #colBB, body #wrapper #colII #square1 #rowAA #colBB, body #wrapper #colIII #square1 #rowAA #colBB {
+            flex: 3;
+            border: 2px solid #333;
+            background-color: snow; }
+        body #wrapper #colI #square1 #rowBB, body #wrapper #colII #square1 #rowBB, body #wrapper #colIII #square1 #rowBB {
+          flex: 4;
+          display: flex;
+          flex-direction: row; }
+          body #wrapper #colI #square1 #rowBB #colCC, body #wrapper #colII #square1 #rowBB #colCC, body #wrapper #colIII #square1 #rowBB #colCC {
+            flex: 1;
+            display: flex;
+            flex-direction: column; }
+            body #wrapper #colI #square1 #rowBB #colCC #row-aa, body #wrapper #colII #square1 #rowBB #colCC #row-aa, body #wrapper #colIII #square1 #rowBB #colCC #row-aa {
+              flex: 1;
+              border: 2px solid #333;
+              background-color: snow; }
+            body #wrapper #colI #square1 #rowBB #colCC #row-bb, body #wrapper #colII #square1 #rowBB #colCC #row-bb, body #wrapper #colIII #square1 #rowBB #colCC #row-bb {
+              flex: 1;
+              border-top: 2px solid #333;
+              border-right: 2px solid #333;
+              border-left: 2px solid #333;
+              background-color: snow; }
+          body #wrapper #colI #square1 #rowBB #colDD, body #wrapper #colII #square1 #rowBB #colDD, body #wrapper #colIII #square1 #rowBB #colDD {
+            flex: 4;
+            border: 2px solid #333;
+            background-color: red; }
+      body #wrapper #colI #square2, body #wrapper #colII #square2, body #wrapper #colIII #square2 {
+        flex: 1;
+        display: flex;
+        flex-direction: row; }
+        body #wrapper #colI #square2 #rowCC, body #wrapper #colII #square2 #rowCC, body #wrapper #colIII #square2 #rowCC {
+          flex: 3;
+          display: flex;
+          flex-direction: column; }
+          body #wrapper #colI #square2 #rowCC #colEE, body #wrapper #colII #square2 #rowCC #colEE, body #wrapper #colIII #square2 #rowCC #colEE {
+            flex: 4;
+            display: flex;
+            flex-direction: row; }
+            body #wrapper #colI #square2 #rowCC #colEE #row-cc, body #wrapper #colII #square2 #rowCC #colEE #row-cc, body #wrapper #colIII #square2 #rowCC #colEE #row-cc {
+              flex: 1;
+              display: flex;
+              flex-direction: column; }
+              body #wrapper #colI #square2 #rowCC #colEE #row-cc #col-aa, body #wrapper #colII #square2 #rowCC #colEE #row-cc #col-aa, body #wrapper #colIII #square2 #rowCC #colEE #row-cc #col-aa {
+                flex: 1;
+                border-bottom: 2px solid #333;
+                border-right: 2px solid #333;
+                border-left: 2px solid #333;
+                background-color: snow; }
+              body #wrapper #colI #square2 #rowCC #colEE #row-cc #col-bb, body #wrapper #colII #square2 #rowCC #colEE #row-cc #col-bb, body #wrapper #colIII #square2 #rowCC #colEE #row-cc #col-bb {
+                flex: 3;
+                border: 2px solid #333;
+                background-color: gold; }
+            body #wrapper #colI #square2 #rowCC #colEE #row-dd, body #wrapper #colII #square2 #rowCC #colEE #row-dd, body #wrapper #colIII #square2 #rowCC #colEE #row-dd {
+              flex: 2;
+              display: flex;
+              flex-direction: column; }
+              body #wrapper #colI #square2 #rowCC #colEE #row-dd #col-cc, body #wrapper #colII #square2 #rowCC #colEE #row-dd #col-cc, body #wrapper #colIII #square2 #rowCC #colEE #row-dd #col-cc {
+                flex: 1;
+                border: 2px solid #333;
+                background-color: black; }
+              body #wrapper #colI #square2 #rowCC #colEE #row-dd #col-dd, body #wrapper #colII #square2 #rowCC #colEE #row-dd #col-dd, body #wrapper #colIII #square2 #rowCC #colEE #row-dd #col-dd {
+                flex: 1;
+                border: 2px solid #333;
+                background-color: snow; }
+          body #wrapper #colI #square2 #rowCC #colFF, body #wrapper #colII #square2 #rowCC #colFF, body #wrapper #colIII #square2 #rowCC #colFF {
+            flex: 1;
+            border: 2px solid #333;
+            background-color: snow; }
+        body #wrapper #colI #square2 #rowDD, body #wrapper #colII #square2 #rowDD, body #wrapper #colIII #square2 #rowDD {
+          flex: 2;
+          display: flex;
+          flex-direction: column; }
+          body #wrapper #colI #square2 #rowDD #colGG, body #wrapper #colII #square2 #rowDD #colGG, body #wrapper #colIII #square2 #rowDD #colGG {
+            flex: 1;
+            border: 2px solid #333;
+            background-color: snow; }
+          body #wrapper #colI #square2 #rowDD #colHH, body #wrapper #colII #square2 #rowDD #colHH, body #wrapper #colIII #square2 #rowDD #colHH {
+            flex: 1;
+            border: 2px solid #333;
+            background-color: snow; }
+          body #wrapper #colI #square2 #rowDD #colII, body #wrapper #colII #square2 #rowDD #colII, body #wrapper #colIII #square2 #rowDD #colII {
+            flex: 1;
+            border: 2px solid #333;
+            background-color: black; }
+          body #wrapper #colI #square2 #rowDD #colJJ, body #wrapper #colII #square2 #rowDD #colJJ, body #wrapper #colIII #square2 #rowDD #colJJ {
+            flex: 2;
+            display: flex;
+            flex-direction: row; }
+            body #wrapper #colI #square2 #rowDD #colJJ #row-ee, body #wrapper #colII #square2 #rowDD #colJJ #row-ee, body #wrapper #colIII #square2 #rowDD #colJJ #row-ee {
+              flex: 1;
+              border: 2px solid #333;
+              background-color: gold; }
+            body #wrapper #colI #square2 #rowDD #colJJ #row-ff, body #wrapper #colII #square2 #rowDD #colJJ #row-ff, body #wrapper #colIII #square2 #rowDD #colJJ #row-ff {
+              flex: 1;
+              border: 2px solid #333;
+              background-color: snow; }
     body #wrapper #colII #square3, body #wrapper #colII #square4 {
       flex: 1;
-      border: 1px solid black;
       display: flex;
       flex-direction: row; }
       body #wrapper #colII #square3 #colA, body #wrapper #colII #square4 #colA, body #wrapper #colII #square3 #colB, body #wrapper #colII #square4 #colB {
         flex: 1;
-        border: 1px solid black;
         display: flex;
         flex-direction: column; }
         body #wrapper #colII #square3 #colA #row-a, body #wrapper #colII #square4 #colA #row-a, body #wrapper #colII #square3 #colB #row-a, body #wrapper #colII #square4 #colB #row-a {
           flex: 1;
-          border: 1px solid black; }
+          border: 2px solid #333;
+          background-color: gold; }
         body #wrapper #colII #square3 #colA #row-b, body #wrapper #colII #square4 #colA #row-b, body #wrapper #colII #square3 #colB #row-b, body #wrapper #colII #square4 #colB #row-b {
           flex: 2;
-          border: 1px solid black; }
+          border: 2px solid #333;
+          background-color: gold; }
         body #wrapper #colII #square3 #colA #row-c, body #wrapper #colII #square4 #colA #row-c, body #wrapper #colII #square3 #colB #row-c, body #wrapper #colII #square4 #colB #row-c {
           flex: 2;
-          border: 1px solid black;
           display: flex;
           flex-direction: row; }
-          body #wrapper #colII #square3 #colA #row-c #col-i, body #wrapper #colII #square4 #colA #row-c #col-i, body #wrapper #colII #square3 #colB #row-c #col-i, body #wrapper #colII #square4 #colB #row-c #col-i {
+          body #wrapper #colII #square3 #colA #row-c #col-vi, body #wrapper #colII #square4 #colA #row-c #col-vi, body #wrapper #colII #square3 #colB #row-c #col-vi, body #wrapper #colII #square4 #colB #row-c #col-vi {
             flex: 1;
-            border: 1px solid black; }
+            border: 2px solid #333;
+            background-color: snow; }
           body #wrapper #colII #square3 #colA #row-c #col-ii, body #wrapper #colII #square4 #colA #row-c #col-ii, body #wrapper #colII #square3 #colB #row-c #col-ii, body #wrapper #colII #square4 #colB #row-c #col-ii {
             flex: 1;
-            border: 1px solid black; }
+            border: 2px solid #333;
+            background-color: snow; }
       body #wrapper #colII #square3 #colB #row-d, body #wrapper #colII #square4 #colB #row-d {
         flex: 2;
-        border: 1px solid black; }
+        border: 2px solid #333;
+        background-color: dodgerblue; }
       body #wrapper #colII #square3 #colB #row-e, body #wrapper #colII #square4 #colB #row-e {
         flex: 2;
-        border: 1px solid black; }
+        border: 2px solid #333;
+        background-color: red; }
       body #wrapper #colII #square3 #colB #row-f, body #wrapper #colII #square4 #colB #row-f {
         flex: 1;
-        border: 1px solid black; }
+        border: 2px solid #333;
+        background-color: snow; }
     body #wrapper #colII #square4 #colC {
       flex: 1;
-      border: 1px solid black;
       display: flex;
       flex-direction: column; }
       body #wrapper #colII #square4 #colC #row-g {
         flex: 1;
-        border: 1px solid black; }
+        border: 2px solid #333;
+        background-color: snow; }
       body #wrapper #colII #square4 #colC #row-h {
         flex: 2;
-        border: 1px solid black; }
+        border: 2px solid #333;
+        background-color: dodgerblue; }
       body #wrapper #colII #square4 #colC #row-i {
         flex: 2;
-        border: 1px solid black; }
+        border: 2px solid #333;
+        background-color: red; }
     body #wrapper #colII #square4 #colD {
       flex: 1;
-      border: 1px solid black;
       display: flex;
       flex-direction: column; }
       body #wrapper #colII #square4 #colD #row-j {
         flex: 2;
-        border: 1px solid black;
         display: flex;
         flex-direction: row; }
         body #wrapper #colII #square4 #colD #row-j #col-iii {
           flex: 1;
-          border: 1px solid black; }
+          border: 2px solid #333;
+          background-color: snow; }
         body #wrapper #colII #square4 #colD #row-j #col-iiii {
           flex: 1;
-          border: 1px solid black; }
+          border: 2px solid #333;
+          background-color: snow; }
       body #wrapper #colII #square4 #colD #row-k {
         flex: 2;
-        border: 1px solid black; }
+        border: 2px solid #333;
+        background-color: gold; }
       body #wrapper #colII #square4 #colD #row-l {
         flex: 1;
-        border: 1px solid black;
         display: flex;
         flex-direction: row; }
         body #wrapper #colII #square4 #colD #row-l #col-iv {
           flex: 1;
-          border: 1px solid black; }
+          border: 2px solid #333;
+          background-color: snow; }
         body #wrapper #colII #square4 #colD #row-l #col-v {
           flex: 1;
-          border: 1px solid black; }
+          border: 2px solid #333;
+          background-color: black; }
+    body #wrapper #colIII #square5 {
+      flex: 1;
+      display: flex;
+      flex-direction: column; }
+      body #wrapper #colIII #square5 #colE {
+        flex: 1;
+        display: flex;
+        flex-direction: row; }
+        body #wrapper #colIII #square5 #colE #row-m {
+          flex: 1;
+          border: 2px solid #333;
+          background-color: gold; }
+        body #wrapper #colIII #square5 #colE #row-n {
+          flex: 1;
+          border: 2px solid #333;
+          background-color: black; }
+        body #wrapper #colIII #square5 #colE #row-o {
+          flex: 3;
+          border: 2px solid #333;
+          background-color: snow; }
+      body #wrapper #colIII #square5 #colF {
+        flex: 4;
+        display: flex;
+        flex-direction: row; }
+        body #wrapper #colIII #square5 #colF #row-p {
+          flex: 2;
+          display: flex;
+          flex-direction: column; }
+          body #wrapper #colIII #square5 #colF #row-p #col-a {
+            flex: 1;
+            border: 2px solid #333;
+            background-color: gold; }
+          body #wrapper #colIII #square5 #colF #row-p #col-b {
+            flex: 1;
+            border: 2px solid #333;
+            background-color: black; }
+          body #wrapper #colIII #square5 #colF #row-p #col-c {
+            flex: 1;
+            border: 2px solid #333;
+            background-color: snow; }
+          body #wrapper #colIII #square5 #colF #row-p #col-d {
+            flex: 1;
+            border: 2px solid #333;
+            background-color: snow; }
+        body #wrapper #colIII #square5 #colF #row-q {
+          flex: 2;
+          display: flex;
+          flex-direction: column; }
+          body #wrapper #colIII #square5 #colF #row-q #col-e {
+            flex: 1;
+            border: 2px solid #333;
+            background-color: snow; }
+          body #wrapper #colIII #square5 #colF #row-q #col-f {
+            flex: 1;
+            border: 2px solid #333;
+            background-color: black; }
+        body #wrapper #colIII #square5 #colF #row-r {
+          flex: 1;
+          display: flex;
+          flex-direction: column; }
+          body #wrapper #colIII #square5 #colF #row-r #col-g {
+            flex: 3;
+            border: 2px solid #333;
+            background-color: gold; }
+          body #wrapper #colIII #square5 #colF #row-r #col-h {
+            flex: 1;
+            border-top: 2px solid #333;
+            border-right: 2px solid #333;
+            border-left: 2px solid #333;
+            background-color: snow; }
+    body #wrapper #colIII #square6 {
+      flex: 1;
+      display: flex;
+      flex-direction: column; }
+      body #wrapper #colIII #square6 #colG {
+        flex: 4;
+        display: flex;
+        flex-direction: row; }
+        body #wrapper #colIII #square6 #colG #row-s {
+          flex: 4;
+          border: 2px solid #333;
+          background-color: dodgerblue; }
+        body #wrapper #colIII #square6 #colG #row-t {
+          flex: 1;
+          display: flex;
+          flex-direction: column; }
+          body #wrapper #colIII #square6 #colG #row-t #col-i {
+            flex: 1;
+            border-bottom: 2px solid #333;
+            border-right: 2px solid #333;
+            border-left: 2px solid #333;
+            background-color: snow; }
+          body #wrapper #colIII #square6 #colG #row-t #col-J {
+            flex: 1;
+            border: 2px solid #333;
+            background-color: snow; }
+      body #wrapper #colIII #square6 #colH {
+        flex: 1;
+        display: flex;
+        flex-direction: row; }
+        body #wrapper #colIII #square6 #colH #row-u {
+          flex: 3;
+          border: 2px solid #333;
+          background-color: snow; }
+        body #wrapper #colIII #square6 #colH #row-v {
+          flex: 2;
+          border: 2px solid #333;
+          background-color: snow; }
 
 /*# sourceMappingURL=style.css.map */
